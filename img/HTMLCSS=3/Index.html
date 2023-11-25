@@ -1,0 +1,372 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#index{
+			border-radius: 25px;
+			background-color: blue;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+		#index2{
+			border-radius: 25px;
+			border: 2px solid pink;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+		#index3{
+			border-radius: 25px;
+			background-image: url(Banner.imeg);
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+		#index4{
+			border-radius: 15px 50px;
+			background-color: lightblue;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+		#index5{
+			border-radius: 50px/15px;
+			background-color: darkgoldenrod;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+		#index6{
+			border-radius: 50%;
+			background-color: lightgreen;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+			text-align: center;
+		}
+		#jump{
+			text-align: center;
+			border: 20px solid green;
+			border-radius: 25px;
+			background-color: rgb(60, 116, 172);
+			padding: 20px;
+			width: 300px;
+			height: 300px;
+			font-size: 24px;
+			border-image-source: url(border.img);
+			border-image-slice: 30;
+			border-image-repeat: repeat;
+		}
+		#eilite{
+			padding: 50px;
+			width: 300px;
+			height: 150px;
+			border: 20px solid green;
+			background-image: url(banner.img);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100px;
+			background-origin: border-box;
+		}
+		/*================ linear-gradient =================*/
+		#jump2{
+			text-align: center;
+			border: 5px solid green;
+			border-radius: 50px 50px;
+			padding: 20px;
+			width: 300px;
+			height: 300px;
+			text-align: center;
+			color: black;
+			font-size: 19px;
+			background-image: linear-gradient(to right,blue,red);
+		}
+		/*======================= radial-gradient =======================*/
+		#jump3 {
+			text-align: center;
+			border: 5px solid green;
+			border-radius: 50px 50px;
+			padding: 20px;
+			width: 300px;
+			height: 300px;
+			text-align: center;
+			color: black;
+			font-size: 19px;
+			background-image: repeating-radial-gradient(red,green 25%, yellow 25%);
+		}
+		#no{
+			font-size: 60px;
+			color: blue;
+			text-shadow: -10px -20px 3px black;
+		}
+		#yes{
+			font-size: 60px;
+			color: white;
+			text-shadow: 1px 1px 2px black,0 0 25px blue,0 0 5px darkblue;
+		}
+		#ny{
+			font-size: 60px;
+			color: yellow;
+			text-shadow: -1px 0px black,0 1px black,0 -1px black;
+		}
+		#pro{
+			width: 300px;
+			height: 100px;
+			padding: 15px;
+			font-size: 50px;
+			background-color: coral;
+			box-shadow: 10px 10px 5px red, 20px 20px 10px blue;
+		}
+		/*======================= cards =======================*/
+		.c{
+			width: 250px;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,0.19);
+		}
+		.d{
+			background-color: lightskyblue;
+			color: white;
+			padding: 10px;
+			font-size: 40px;
+		}
+		.c1{
+			padding: 10px;
+		}
+		/*====================== over flow ==========================*/
+		#his{
+			width: 200px;
+			border: 1px solid #000000;
+			padding: 10px;
+			font-size: 18px;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		#his:hover{
+			overflow: visible;
+		}
+		.his2{
+			width: 200px;
+			border: 1px solid #000000;
+			padding: 10px;
+			font-size: 18px;
+			word-wrap: break-word;
+		}
+		.his3{
+			width: 200px;
+			border: 1px solid #000000;
+			padding: 10px;
+			font-size: 18px;
+			writing-mode: vertical-lr;
+		}
+		/*=========== changeing ways =================*/
+		#tr7{
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue;
+			border: 4px solid black;
+			transform: translate(60px,90px);
+		}
+		#tr8{
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue;
+			border: 4px solid black;
+			transform: rotate(40deg);
+			transform-origin: left bottom;
+		}
+		#tr9{
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue;
+			border: 4px solid black;
+			transform: scale(0.5,0.5);
+		}
+		/****** you can also give "y or x" to change ************/
+		#tr10{
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue;
+			border: 4px solid black;
+			transform: skew(30deg,10deg);
+		}
+		/*============== all inone =================*/
+		/*** in the matrix braket: first width sskew "y" t skew "x" f hight/scale "y" fif possition change six **************/
+		#tr11{
+			width: 200px;
+			height: 200px;
+			background-color: lightskyblue;
+			border: 4px solid black;
+			transform: matrix(2,0,0.5,1,150,0);
+		}
+		/*================ 3D transformation rotate X,Y,Z ===================*/
+		.output{
+			width: 400px;
+			height: 300px;
+			background: yellow;
+			font-size: 25px;
+			text-align: center;
+			margin: 100px 0 0 100px;
+			perspective: 1000px;
+		}
+		.odioput{
+			width: 400px;
+			height: 300px;
+			background-color: green;
+			transform: rotateZ(70deg);
+		}
+		/****************  aply - / + on angle and change X Y or Z ********************/
+		/******* rotate= first X second Y third Z forth angle **************/
+		.Output2{
+			width: 400px;
+			height: 300px;
+			background: yellow;
+			font-size: 25px;
+			text-align: center;
+			margin: 100px 0 0 100px;
+			perspective: 900px;
+		}
+		.Odioput2{
+			width: 400px;
+			height: 300px;
+			background-color: green;
+			transform: scale3D(1,1,3) rotateY(80deg);
+		}
+		.ABCD{
+			position: relative;
+			height: 200px;
+			width: 200px;
+			margin: 100px;
+			padding: 10px;
+			border: 4px solid black;
+			transform: translate(0px,300px);
+		}
+		.EFG{
+			padding: 50px;
+			position: absolute;
+			border: 4px solid black;
+			background-color: darkorange;
+			transform: rotateY(60deg);
+			transform-style: flat;
+		}
+		.HIJK{
+			padding: 40px;
+			position: absolute;
+			border: 4px solid black;
+			transform: rotateY(-60deg);
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<p id="index">Round color with background color</p>
+	<p id="index2">Round color with background color</p>
+	<p id="index3">Bakground image</p>
+	<p id="index4">Four values</p>
+	<p id="index5">5 Values</p>
+	<p id="index6">love coding</p>
+	<center>
+	<P id="jump">Hi my name is Syed Afeef Tihami. I read in class 7. I love to do codding.  love to play Football. I love to eat snacks. i also love to play minecraft. I have a little brother. his name is Syed Affin Abtahi Albab</P>
+	</center>
+	<Center>
+		<h1>Multiple Backgroun</h1>
+		<div id="eilite">
+			hello!ca you hear me?
+		</div>
+	</Center>
+	<center>
+		<P id="jump2">Holtzman and a dozen other Jewish rabbis led the civil disobedience action as thousands rallied outside to demand an end to the US-backed Israeli assault on Gaza. Many held signs that read “Jews say: Ceasefire Now,” and “No to war, no to apartheid.” Gaza’s 2.2 million residents face a mounting death toll from a relentless  bombing campaign by Israeli forces, which have cut off access to food, water, and electricity in retaliation for the Oct. 7 Hamas cross-border attack that killed over 1,400 Israelis. </P>
+		</center>
+		<center>
+			<P id="jump3">Holtzman and a dozen other Jewish rabbis led the civil disobedience action as thousands rallied outside to demand an end to the US-backed Israeli assault on Gaza. Many held signs that read “Jews say: Ceasefire Now,” and “No to war, no to apartheid.” Gaza’s 2.2 million residents face a mounting death toll from a relentless  bombing campaign by Israeli forces, which have cut off access to food, water, and electricity in retaliation for the Oct. 7 Hamas cross-border attack that killed over 1,400 Israelis. </P>
+			</center>
+			<center>
+				<h1>Advanced HTML.CSS (ultra shadow)</h1>
+				<P id="no">Hello!!! Everyone</P>
+				</center>
+				<center>
+					<h1>Advanced HTML.CSS (with shadow)</h1>
+					<P id="yes">Hello!!! Everyone</P>
+					</center>
+					<center>
+					<h1>Advanced HTML.CSS (with out shadow strip line)</h1>
+					<P id="ny">Hello!!! Everyone</P>
+					</center>
+					<center>
+						<h1>Advanced HTML.CSS (box shadow)</h1>
+						<P id="pro">Hello!!! Everyone</P>
+					</center>
+					<center>
+                    <h1>Cards</h1>
+					<div>
+						<div class="c">
+							<div class="d">
+							<h1>09</h1>
+							</div>
+							<div class="c1">
+								<p>Card=09-Tihami</p>
+							</div>
+						</div>
+					</div>
+					</div>
+					</center>
+					<center>
+						<h1>My codding</h1>
+						<p id="his">Hello!!! my name is SYED AFEEF TIHAMI</p>
+					</center>
+					<center>
+						<h1>My codding</h1>
+						<p class="his2">Hello!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+					</center>
+					<center>
+						<h1>Writing mood</h1>
+						<p class="his3">Some text with writing mood</p>
+					</center>
+					<center>
+						<h1>2D Platform</h1>
+						<div id="tr7"></div>
+					</center>
+					<center>
+						<h1>2D Platform</h1>
+						<div id="tr8"></div>
+					</center>
+					<center>
+						<h1>2D Platform</h1>
+						<div id="tr9"></div>
+					</center>
+					<center>
+						<h1>2D Platform</h1>
+						<div id="tr10"></div>
+					</center>
+					<center>
+						<h1>2D Platform</h1>
+						<div id="tr11"></div>
+					</center>
+					<center>
+						<h1>3D Transform</h1>
+						<div class="output">
+							<div class="odioput">Syed Afeef Tihami.</div>
+						</div>
+					</center>
+					<center>
+						<h1>3D Transform</h1>
+						<div class="Output2">
+							<div class="Odioput2">Syed Afeef Tihami.</div>
+						</div>
+					</center>
+					<center>
+						<h1>3D Transform</h1>
+						<div class="ABCD">
+							<div class="EFG">
+								<div class="HIJK">
+
+								</div>
+							</div>
+						</div>
+					</center>
+</body>
+</html>
